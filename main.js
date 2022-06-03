@@ -30,32 +30,32 @@ const teams = [
     role: "Graphic Designer",
   },
 ];
-
+// dichiarazione variabili
 let containerTeamCard = document.querySelector(".container__teamcard");
 let inputName = document.getElementById("name");
 let inputRole = document.getElementById("role");
 let inputImage = document.getElementById("img");
 let buttonAddMember = document.querySelector(".add__button");
-
+// creo l'evento al click sul button
 buttonAddMember.addEventListener("click", (e) => {
   e.preventDefault();
   dispalyImage();
   addNewObject(inputName, inputRole, inputImage);
 });
 
-//  funzione per creare nuovo oggetto
+// creo una funzione per creare nuovo oggetto
 function addNewObject(name, role, image) {
   let newObj = {
-    img: inputImage.value,
-    name: inputName.value,
-    role: inputRole.value,
+    img: image.value,
+    name: name.value,
+    role: role.value,
   };
   teams.push(newObj);
-  console.log(teams);
 }
-
+// evoco la funzione per aggiungere le immagini
 dispalyImage();
 
+// creo la funzione per aggiungere le immagini
 function dispalyImage() {
   containerTeamCard.innerHTML = "";
   for (i = 0; i < teams.length; i++) {

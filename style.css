@@ -5,25 +5,32 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+/* BODY */
 body {
   background: black;
 }
+/* MAIN */
 main {
   background: #f5f0e8;
   text-align: center;
   width: 70%;
   margin: 0 auto;
 }
-.text {
-  width: 60%;
-  margin: 0 auto;
-}
+/* UTILITIES */
 h3 {
   text-transform: uppercase;
+  padding: 12px 0;
 }
 p {
   font-size: 12px;
 }
+/* TEXT CONTAINER */
+.text {
+  width: 40%;
+  margin: 0 auto;
+  padding: 12px;
+}
+/* CONTAINER CARDS */
 .container__teamcard {
   margin: 0 auto;
   display: flex;
@@ -40,8 +47,10 @@ p {
   width: 224px;
   height: 248px;
 }
+/* CONTAINER INPUT */
 .insert {
-  width: 25%;
+  padding: 64px;
+  width: 40%;
   margin: 0 auto;
   text-align: left;
 }
@@ -50,4 +59,11 @@ p {
 }
 .insert input {
   width: 100%;
+  border-radius: 4px;
+  height: 24px;
+}
+.add__button {
+  width: 50%;
+  border-radius: 4px;
+  height: 24px;
 }
