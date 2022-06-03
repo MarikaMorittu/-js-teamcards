@@ -1,0 +1,53 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: black;
+}
+main {
+  background: #f5f0e8;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.text {
+  width: 60%;
+  margin: 0 auto;
+}
+h3 {
+  text-transform: uppercase;
+}
+p {
+  font-size: 12px;
+}
+.container__teamcard {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.card {
+  background: white;
+  margin: 12px;
+  padding-bottom: 8px;
+}
+.card img {
+  width: 224px;
+  height: 248px;
+}
+.insert {
+  width: 25%;
+  margin: 0 auto;
+  text-align: left;
+}
+.insert div {
+  margin: 12px 0;
+}
+.insert input {
+  width: 100%;
+}
