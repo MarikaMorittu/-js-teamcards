@@ -39,8 +39,8 @@ let buttonAddMember = document.querySelector(".add__button");
 // creo l'evento al click sul button
 buttonAddMember.addEventListener("click", (e) => {
   e.preventDefault();
-  dispalyImage();
   addNewObject(inputName, inputRole, inputImage);
+  dispalyImage();
 });
 
 // creo una funzione per creare nuovo oggetto
